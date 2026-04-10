@@ -1,0 +1,33 @@
+Category: control-flow
+Title: If-Else Statements  
+Description:  
+The `if-else` statement in Python is used for decision-making. It allows code execution based on a condition.  
+If the condition evaluates to `True`, the `if` block executes; otherwise, the `else` block executes.  
+An `elif` (else if) statement can be used to check multiple conditions.  
+
+Snippet:  
+```python
+# Basic if-else example
+x = 10
+
+if x > 0:
+    print("Positive number")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative number")
+
+# Nested if-else
+age = 18
+
+if age >= 18:
+    if age >= 21:
+        print("You can drink alcohol.")
+    else:
+        print("You can vote but not drink alcohol.")
+else:
+    print("You are a minor.")
+
+# Ternary (short-hand if-else)
+status = "Adult" if age >= 18 else "Minor"
+print(status)

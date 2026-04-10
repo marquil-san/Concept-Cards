@@ -1,0 +1,47 @@
+Category: basics
+Description:
+A list in Python is a mutable, ordered collection that allows duplicate elements. It is one of the most commonly used data structures, enabling easy storage and manipulation of multiple values.
+Lists are defined using square brackets `[]`, and they can contain elements of different data types, including numbers, strings, and even other lists.
+Python provides various built-in methods to perform operations on lists, such as adding, removing, sorting, and searching elements efficiently.
+Lists support indexing and slicing, making them highly flexible for handling data.
+
+Snippet:
+# Creating a list
+my_list = [1, 2, 3, 4, 5]
+
+# Accessing elements by index
+print(my_list[0])  # First element
+print(my_list[-1]) # Last element
+
+# Slicing a list
+print(my_list[1:4]) # Elements from index 1 to 3
+
+# Modifying an element
+my_list[2] = 10
+
+# Adding elements
+my_list.append(6)  # Adds at the end
+my_list.insert(2, 15)  # Inserts 15 at index 2
+
+# Removing elements
+my_list.remove(4)  # Removes the first occurrence of 4
+popped_item = my_list.pop()  # Removes the last element and returns it
+del my_list[1]  # Deletes element at index 1
+
+# Finding elements
+print(my_list.index(10))  # Returns index of first occurrence of 10
+print(3 in my_list)  # Checks if 3 exists in the list
+
+# Sorting and reversing
+my_list.sort()  # Sorts the list in ascending order
+my_list.reverse()  # Reverses the list
+
+# Iterating through a list
+for item in my_list:
+    print(item)
+
+# Copying a list
+copy_list = my_list.copy()
+
+# Clearing all elements from the list
+my_list.clear()

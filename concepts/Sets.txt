@@ -1,0 +1,30 @@
+Category: basics
+Description:
+A set in Python is an unordered collection of unique elements. Sets are mutable, but can only contain immutable elements.
+Sets are particularly useful for removing duplicates from sequences and performing mathematical set operations.
+They are defined using curly braces {} or the set() constructor.
+
+Snippet:
+# Creating a set
+my_set = {1, 2, 3, 4, 5}
+empty_set = set()  # Empty set
+
+# Adding elements
+my_set.add(6)  # Add single element
+my_set.update([7, 8, 9])  # Add multiple elements
+
+# Removing elements
+my_set.remove(6)  # Raises error if not found
+my_set.discard(7)  # No error if not found
+popped = my_set.pop()  # Remove and return arbitrary element
+
+# Set operations
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+union = set1 | set2  # Union
+intersection = set1 & set2  # Intersection
+difference = set1 - set2  # Difference
+symmetric_diff = set1 ^ set2  # Symmetric difference
+
+# Set comprehension
+evens = {x for x in range(10) if x % 2 == 0}

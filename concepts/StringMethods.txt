@@ -1,0 +1,26 @@
+Category: basics
+Description:
+Python strings are immutable sequences of characters with many built-in methods for manipulation.
+String methods allow you to transform, search, and modify strings in various ways.
+These methods always return new strings as strings are immutable.
+
+Snippet:
+# String manipulation
+text = "Hello, World!"
+print(text.lower())  # Convert to lowercase
+print(text.upper())  # Convert to uppercase
+print(text.title())  # Title case
+
+# String searching
+sentence = "Python is amazing"
+print(sentence.find('is'))  # Find substring
+print(sentence.count('a'))  # Count occurrences
+print(sentence.startswith('Python'))  # Check prefix
+
+# String modification
+spaces = "   trim me   "
+print(spaces.strip())  # Remove whitespace
+text = "Hello,World"
+print(text.replace(',', ' '))  # Replace substring
+words = "one,two,three"
+print(words.split(','))  # Split string

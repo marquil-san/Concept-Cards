@@ -1,0 +1,36 @@
+Category: basics
+Description:
+Functions in Python are blocks of reusable code that perform a specific task.
+They help organize code, promote reusability, and make programs more modular.
+Functions can accept parameters, return values, and include optional arguments.
+
+Snippet:
+# Basic function definition
+def greet(name):
+    return f"Hello, {name}!"
+
+# Function with default parameters
+def power(base, exponent=2):
+    return base ** exponent
+
+# Multiple return values
+def get_coordinates():
+    return (3, 4)
+
+# *args and **kwargs
+def print_args(*args, **kwargs):
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+# Lambda functions
+square = lambda x: x**2
+
+# Decorators
+def timer(func):
+    def wrapper():
+        print("Starting...")
+        func()
+        print("Done!")
+    return wrapper

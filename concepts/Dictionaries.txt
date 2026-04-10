@@ -1,0 +1,35 @@
+Category: basics
+Description:
+A dictionary in Python is a versatile data structure that stores key-value pairs. It is mutable, unordered, and allows fast lookups by key.
+Dictionaries are defined using curly braces {} and can store any type of data as values.
+Keys must be immutable (strings, numbers, or tuples) and unique within the dictionary.
+
+Snippet:
+# Creating a dictionary
+my_dict = {'name': 'John', 'age': 30}
+empty_dict = {}
+
+# Accessing values
+print(my_dict['name'])  # Using key
+print(my_dict.get('age'))  # Using get method
+
+# Adding or updating elements
+my_dict['city'] = 'New York'  # Add new key-value pair
+my_dict['age'] = 31  # Update existing value
+
+# Removing elements
+removed_value = my_dict.pop('city')  # Remove and return value
+del my_dict['age']  # Delete key-value pair
+my_dict.clear()  # Remove all items
+
+# Dictionary methods
+keys = my_dict.keys()  # Get all keys
+values = my_dict.values()  # Get all values
+items = my_dict.items()  # Get all key-value pairs
+
+# Checking if key exists
+if 'name' in my_dict:
+    print("Key exists!")
+
+# Dictionary comprehension
+squares = {x: x**2 for x in range(5)}

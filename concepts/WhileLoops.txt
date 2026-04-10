@@ -1,0 +1,36 @@
+Category: control-flow
+Description:
+While loops in Python execute a block of code repeatedly as long as a given condition is true.
+They are used when you don't know the exact number of iterations needed beforehand.
+The loop continues until the condition becomes false or a break statement is encountered.
+
+Snippet:
+# Basic while loop
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+
+# While loop with else
+num = 0
+while num < 3:
+    print(num)
+    num += 1
+else:
+    print("Loop completed!")
+
+# Break statement
+count = 0
+while True:
+    if count >= 5:
+        break
+    print(count)
+    count += 1
+
+# Continue statement
+i = 0
+while i < 5:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
